@@ -1,0 +1,251 @@
+#display {
+	margin-top: 20px;
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+}
+
+#productImage {
+	height: 122px;
+	width: 92px;
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	display: inline-block;
+	float: left;
+}
+
+#productDescription {
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	display: inline-block;
+	font-size: 19px;
+}
+#descriptionTable td {
+	width: 150px;
+}
+
+body {
+  min-height: 100vh;
+  position: relative;
+  margin: 0;
+  background: #A3C6C4;
+}
+
+.dropdown-menu {
+  border: 2px solid gray;
+  text-align: center;
+}
+
+.dropdown-divider {
+  border-top: gray 2px solid;
+}
+
+.dropdown-items {
+  text-decoration: none;
+  text-align: center;
+  color: gray;
+}
+
+.dropdown-items:hover {
+  text-decoration: none;
+  color: black;
+}
+
+.registration {
+    width: 50%;
+    height: 50%;
+    margin-left: 25%;
+    margin-top: 25%;
+    text-align: center;
+    background: white;
+    border-radius: 10px;
+}
+
+.form-group {
+  margin-left: 10%;
+  width: 80%;
+}
+
+#tableItems {
+  width: 40%;
+  height: 100%;
+  margin-left: 10%;
+  background: white;
+  display: inline-block;
+  border: gray 2px solid;
+  border-radius: 10px;
+}
+
+#itemImage {
+  display: inline-block;
+  float: left;
+  margin-left: 10%;
+  padding-top: 0;
+}
+
+.descriptors {
+  display: inline-block;
+  margin-left: 30%;
+  text-align: center;
+  width: 40%;
+}
+
+.checkout {
+    width: 30%;
+    height: 250px;
+    float: right;
+    display: inline-block;
+    background: white;
+    margin-right: 10%;
+    text-align: center;
+    border: gray 2px solid;
+    padding: 0;
+    border-radius: 10px;
+}
+
+.checkout #total {
+  margin-top: 15%;
+  margin-bottom: 5%;
+}
+
+#display {
+  background: white;
+  width: 70%;
+  height: 400px;
+  margin-left: 15%;
+  margin-top: 10%;
+  border-radius: 10px;
+  text-align: center;
+}
+
+#display img {
+  width: 250px;
+  height: 300px;
+}
+
+.leftProduct {
+  width: 30%;
+  margin-left: 0;
+  display: inline-block;
+}
+
+#display #productDescription {
+  width: 30%;
+  float: right;
+  margin-right: 10%;
+  margin-top: 7%;
+  display: inline-block;
+}
+
+#display a:hover {
+  text-decoration: none;
+  color: darkgray;
+}
+
+#display a {
+  color: gray;
+  text-decoration: none;
+}
+
+#productPageHeader {
+	width: 90%;
+	margin-left: 5%;
+	margin-top: 2.5%;
+	text-align: center;
+}
+
+.productContainer table {
+	display: inline-block;
+}
+
+.productContainer table tr {
+	text-align: center;
+}
+
+.itemTables {
+	margin-left: 5%;
+	width: 90%;
+}
+
+.singleTable {
+	border: black 4px solid;
+	background: white;
+	margin-right: 2.5%;
+}
+
+#image {
+	border: 2px black solid;
+	margin: 0;
+}
+.main-container {
+    min-height: 100%;
+    height: auto !important;
+}
+/* Style Footer */
+.footer-container {
+    height:2%;
+    position: absolute;
+    width:100%;
+    bottom: -320px;
+}
+
+.footer-container h4 {
+  color:gray;
+}
+
+.footer-about .contact-information span {
+  display:block;
+  font-size: 18px;
+  margin-bottom: 12px;
+  color:white;
+}
+
+.footer-links .links a, li{
+  color:white;
+}
+
+.footer-copyright {
+    color:white;
+    font-size:16px;
+ }
+
+ .footer-about .social a {
+   border: 1px solid gray;
+   width: 45px;
+   height:41px;
+   padding-top:5px;
+   margin-top:5px;
+   margin-right:5px;
+   text-align:center;
+   display:inline-block;
+   font-size:23px;
+   border-radius: 5px;
+   color:white;
+ }
+
+ .footer-about .social a:hover {
+   border: 1px solid white;
+   color:white;
+   transition: all .3s;
+}
+
+.footer-links ul a{
+  display:block;
+  font-size:16px;
+  margin-bottom:10px;
+  transition:all .3s;
+}
+
+.footer-links ul a:hover{
+  color:white;
+  margin-left:15px;
+  transition: all .3s;
+}
+
+.footer-welcome  {
+ color:white;
+}

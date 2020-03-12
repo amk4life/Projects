@@ -1,0 +1,143 @@
+{% extends "base.html" %}
+{% set active_page = "About Us" %}
+
+{% block content %}
+
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title> About </title>
+        <style>
+
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            body {
+                background: #A3C6C4;
+            }
+
+             .title1 {
+                font-weight: bold;
+             }
+
+             .image1 {
+                width: auto;
+                height: auto;
+                max-width: 70%;
+                max-height: 70%;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 5px;
+                margin-top: 5p;
+                opacity: 0.8;
+                border: solid black 2px;
+                margin-top: 5px;
+
+             }
+
+             .text1 {
+                font-family: verdana;
+                color: white;
+                background-color: #6C7A89;
+                text-align: center;
+                border: solid black 2px;
+                margin-bottom: 5px;
+             }
+
+             .title2 {
+                font-weight: bold;
+             }
+
+             .team {
+                width: 100%;
+             }
+
+             .image2 {
+                height: 250px;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center center;
+                position: relative;
+                width: 50%;
+                border: solid black 2px;
+                opacity: 0.8;
+             }
+
+             .text2, .image2 {
+                float: left;
+                display: block;
+             }
+
+             .text2 {
+                width: 50%;
+                text-align: center;
+                font-family: verdana;
+                color: white;
+                background-color: #6C7A89;
+                border: solid black 2px;
+                height: 250px;
+             }
+
+             ul {
+                list-style-type: none;
+             }
+
+             @media (max-width: 600px) {
+                .text2, .image2 {
+                    float: none;
+                    width: 100%;
+                }
+             }
+
+        </style>
+    </head>
+
+    <body>
+      <section class="About">
+
+          <div class="container">
+             <div class="column">
+                 <img src="static/About.jpeg" class="image1">
+                 <div class="text1">
+                     <h1 class="title1"> About This Site </h1>
+                     <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                         Dolor sed viverra ipsum nunc aliquet bibendum enim. In massa tempor nec feugiat.
+                         Nunc aliquet bibendum enim facilisis gravida. Nisl nunc mi ipsum faucibus vitae aliquet nec ullamcorper.
+                         Amet luctus venenatis lectus magna fringilla.
+                         Volutpat maecenas volutpat blandit aliquam etiam erat velit scelerisque in.
+                         Egestas egestas fringilla phasellus faucibus scelerisque eleifend.
+                         Sagittis orci a scelerisque purus semper eget duis. </p>
+                 </div>
+             </div>
+
+              <div class="team">
+
+                  <div class="image2"
+                      style="background-image:url(static/team.jpg);">
+                  </div>
+
+                  <div class="text2">
+                      <h1 class="title2"> Our Team </h1>
+                      <ul>
+                          <li> Alyssa Romero </li>
+                          <br>
+                          <li> Ammar Khan </li>
+                          <br>
+                          <li> Atulya Shetty </li>
+                          <br>
+                          <li> Nick Montoya </li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+
+      </section>
+
+    </body>
+</html>
+{% endblock %}

@@ -1,0 +1,12 @@
+Gmail Account:
+Email: amkdemo211@gmail.com
+Password: uabgooglecs
+
+Twitter Account:
+Email: amkdemo211@gmail.com
+Password: uabgooglecs
+
+consumer_key = 'UbquHMu9zO50tT9ScVf50nTuU'
+consumer_secret = 'NO1qfcEwAW1JXMhyeHNp76RI2cKqIHli2hac8tnV9w67OW6She'
+access_token = '1114660079188480000-mCnWIli7FkuQhrCKomm014nGdqHHva'
+access_secret = 'OQmX74pPpXP6VEU3Llak1JsptzoHSTX7p6nWWQRN9JRpl'

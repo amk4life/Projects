@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% set active_page = "Products" %}
+
+
+{% block content %}
+<div id="cartItems">
+  <br><br>
+	<div id="tableItems">
+    <hr id="seperator">
+		{% for product in products %}
+		<div>
+			<div id="itemImage">
+				<img height="100" src={{url_for('static', filename='uploads/'+ product.image)}} id="image" width="90"/>
+			</div>
+      <div class="descriptors">
+  			<div id="itemName">
+  				<span id="itemNameTag">{{product.name}}</span><br>
+  				In stock<br>
+          <div id="itemPrice">
+    				${{product.price}}0
+    			</div>
+  				<a href="/removeFromCart?productId={{product.product_id}}">REMOVE</a>
+  			</div>
+      </div>
+		</div>
+    <hr id="seperator">
+		{% endfor %}
+
+    <!-- SHOW SUBTOTAL FOR CHECKOUT -->
+    </div>
+    <div class="checkout">
+      <div id="total">
+        <h4><b><span id="subtotal">SUBTOTAL</span> : ${{totalPrice}}</b></h4>
+	  </div>
+		<form action="{{ url_for('process_payment', amount=totalPrice) }}" method="post">
+				<script src="https://checkout.stripe.com/checkout.js"
+						class="stripe-button"
+						data-key={{ stripe_pub_key }}
+						data-description="Billing form"
+						data-amount= {{ total_price_cents}}
+						data-locale="auto"
+						data-shipping-address="true">
+				</script>
+		</form>
+	</div>
+</div>
+{% endblock %}

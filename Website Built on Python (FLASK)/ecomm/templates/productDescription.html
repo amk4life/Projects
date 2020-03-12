@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% set active_page = "Products" %}
+
+
+{% block content %}
+<div id="display">
+	<div class="leftProduct">
+		<div id="productName">
+			<h1>{{data.name}}</h1>
+		</div>
+		<div>
+			<img src={{url_for('static', filename='uploads/'+data.image) }} id="productImage" height="120" width="90"/>
+		</div>
+	</div>
+
+	<div id="productDescription">
+		<h2>Details</h2>
+		<table id="descriptionTable">
+			<tr>
+				<td><b>Price:</b></td>
+				<td>${{data.price}}</td>
+			</tr>
+			<tr>
+				<td><b>Stock:</b></td>
+				<td>{{data.stock}} in Stock</td>
+			</tr>
+		</table>
+		<br>
+		<h2>Description</h2>
+		<p>{{data.description}}</p>
+		<div id="addToCart">
+			<button class="btn btn-dark" type="button" name="button">
+				<a href="/addToCart?productId={{request.args.get('productId')}}">Add to Cart</a>
+			</button>
+		</div>
+	</div>
+</div>
+{% endblock %}

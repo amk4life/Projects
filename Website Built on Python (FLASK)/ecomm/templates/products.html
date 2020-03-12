@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% set active_page = "Products" %}
+
+{% block content %}
+<div>
+  <h2 id="productPageHeader">ITEMS</h2>
+  <div class="productContainer">
+    <div class="itemTables">
+    {% for product in products %}
+    <table class="singleTable">
+      <tr>
+        <td><b>{{product.name}}</b></td>
+      </tr>
+      <tr>
+        <td>
+        <a href="/productDescription?productId={{product.product_id}}">
+					<img src={{url_for('static', filename='uploads/' + product.image) }} id="image" width="200" height="200">
+				</a>
+        </td>
+      </tr>
+      <tr>
+        <td><b>${{product.price}}0</b></td>
+      </tr>
+    </table>
+    {% endfor %}
+    </div>
+  </div>
+</div>
+{% endblock content %}

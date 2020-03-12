@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% set active_page = "Home" %}
+
+{% block content %}'
+{% with messages = get_flashed_messages() %}
+  {% if messages %}
+    <ul class=flashes>
+        <li>{{ messages[0]}}</li>
+    </ul>
+  {% endif %}
+{% endwith %}
+{% endblock %}
